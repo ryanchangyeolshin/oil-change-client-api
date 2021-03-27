@@ -1,4 +1,4 @@
-package client;
+package com.clients.client;
 
 import java.util.Objects;
 
@@ -12,7 +12,22 @@ class Client {
     private String name;
     private String address;
     private String email;
+    private String city;
+    private String state;
+    private String country;
+    private String phoneNumber;
     private String corporationType;
+
+    public Client(String name, String address, String email, String city, String state, String country, String phoneNumber, String corporationType) {
+        this.name = name;
+        this.address = address;
+        this.email = email;
+        this.city = city;
+        this.state = state;
+        this.country = country;
+        this.phoneNumber = phoneNumber;
+        this.corporationType = corporationType;
+    }
 
     public Long getId() {
         return id;
@@ -32,6 +47,38 @@ class Client {
 
     public void setAddress(String address) {
         this.address = address;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 
     public String getEmail() {
