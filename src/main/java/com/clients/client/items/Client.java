@@ -1,4 +1,4 @@
-package com.clients.client;
+package com.clients.client.items;
 
 import java.util.Objects;
 
@@ -7,7 +7,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
-class Client {
+public class Client {
     private @Id @GeneratedValue Long id;
     private String name;
     private String address;
@@ -17,6 +17,10 @@ class Client {
     private String country;
     private String phoneNumber;
     private String corporationType;
+
+    public Client() {
+
+    }
 
     public Client(String name, String address, String email, String city, String state, String country, String phoneNumber, String corporationType) {
         this.name = name;

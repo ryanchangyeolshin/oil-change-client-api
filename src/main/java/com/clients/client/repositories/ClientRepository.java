@@ -1,8 +1,10 @@
 package com.clients.client.repositories;
 
-import com.clients.client.Client;
+import com.clients.client.items.Client;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-interface ClientRepository extends JpaRepository<Client, Long> {
+@Repository
+public interface ClientRepository extends JpaRepository<Client, Long> {
 
 }

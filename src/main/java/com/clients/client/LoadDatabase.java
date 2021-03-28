@@ -1,5 +1,7 @@
 package com.clients.client;
 
+import com.clients.client.items.Client;
+import com.clients.client.repositories.ClientRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
