@@ -4,9 +4,9 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import com.clients.client.items.Client;
-import com.clients.client.ClientNotFoundException;
+import com.clients.ClientNotFoundException;
 import com.clients.client.repositories.ClientRepository;
-import com.clients.client.ClientModelAssembler;
+import com.clients.ClientModelAssembler;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

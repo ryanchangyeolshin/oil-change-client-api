@@ -1,4 +1,4 @@
-package com.clients.client;
+package com.clients;
 
 public class ClientNotFoundException extends RuntimeException {
     public ClientNotFoundException(Long id) {

@@ -1,4 +1,4 @@
-package com.clients.client;
+package com.clients;
 
 import com.clients.client.items.Client;
 import com.clients.client.controllers.ClientController;
