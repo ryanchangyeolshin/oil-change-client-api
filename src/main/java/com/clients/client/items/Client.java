@@ -1,10 +1,13 @@
 package com.clients.client.items;
 
-import java.util.Objects;
+import com.clients.transactions.items.Transaction;
+
+import java.util.*;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
 @Entity
 public class Client {
@@ -17,6 +20,9 @@ public class Client {
     private String country;
     private String phoneNumber;
     private String corporationType;
+
+    @OneToMany(mappedBy = "transaction")
+    private List<Transaction> transactions;
 
     public Client() {
 
