@@ -17,7 +17,7 @@ public class Transaction {
     @JoinColumn(name="client_id")
     private Client client;
 
-    private int amount;
+    private double amount;
 
     @CreatedDate
     @Column(name = "created_at", nullable = false, updatable = false)
@@ -29,8 +29,7 @@ public class Transaction {
 
     public Transaction () { }
 
-    public Transaction(Long id, Client client, int amount) {
-        this.id = id;
+    public Transaction(Client client, double amount) {
         this.client = client;
         this.amount = amount;
     }
@@ -51,11 +50,11 @@ public class Transaction {
         this.client = client;
     }
 
-    public int getAmount() {
+    public double getAmount() {
         return amount;
     }
 
-    public void setAmount(int amount) {
+    public void setAmount(double amount) {
         this.amount = amount;
     }
 
